@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>기본정보</legend>
+      <div>
+        <label for="username">ID</label>
+        <input type="text" id="username" maxlength="10">
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password">
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+      </div>
+      <div>
+        <label for="gender">성별</label>
+        <select name="gender" id="gender">
+          <option value="m">남성</option>
+          <option value="f">여성</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>추가정보</legend>
+      <div>
+        <label for="age">나이</label>
+        <input type="number" min="1" max="200" id="age">
+      </div>
+      <div>
+        <label for="introduce">자기소개</label><br>
+        <textarea name="" id="introduce" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

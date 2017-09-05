@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table {
+      font-size: 13px;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 4px 8px;
+    }
+    colgroup:nth-of-type(1) {
+      background-color: #fcc;
+    }
+    colgroup:nth-of-type(1) > col:nth-of-type(2) {
+      background-color: red;
+    }
+    colgroup:nth-of-type(2) {
+      background-color: #cfc;
+    }
+    colgroup:nth-of-type(3) {
+      background-color: #ccf;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>피카츄</caption>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <!-- <colgroup span="3"></colgroup> -->
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    
+    <thead>
+      <tr>
+        <th colspan="3">이름</th>
+        <th>도감번호</th>
+        <th>성비</th>
+        <th>타입</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3">세계공통 명칭</td>
+        <td rowspan="2">전국</td>
+        <td rowspan="2">수컷</td>
+        <td rowspan="2">전기</td>
+      </tr>
+      <tr>
+        <td>피카츄</td>
+        <td>@#$</td>
+        <td>Pikachu</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6">포켓몬스터의 마스코트</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <!-- table>caption+(tr>th*3)+(tr>td*3)*2 -->
+  <table>
+    <caption>두 학생의 성적비교</caption>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>점수</th>
+    </tr>
+    <tr>
+      <td>철수</td>
+      <td>23세</td>
+      <td>70점</td>
+    </tr>
+    <tr>
+      <td>영희</td>
+      <td>21세</td>
+      <td>89점</td>
+    </tr>
+  </table>
+</body>
+</html>
